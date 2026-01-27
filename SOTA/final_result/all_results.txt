@@ -1,0 +1,114 @@
+H2X Fidelity Score: 0.608333333333333
+SHAP Fidelity Score: 0.5816666666666667
+LIME Fidelity Score: 0.5675
+LEMNA Fidelity Score: 0.5158333333333334
+i-MAD Fidelity Score: 0.5745276417074877
+---------------------------
+Sparsity
+
+N	H2X		SHAP		LIME		LEMNA	I-MAD
+10	0.548201618	0.306591565	0.402818702	0.025	0.46442857
+100	0.538759112	0.319513385	0.384925699	0.025	0.465901423
+500	0.539454364	0.320589731	0.383968845	0.025	0.466536348
+---------------------------
+Robustness
+N	H2X		SHAP		LIME		LEMNA		I-MAD
+100	0.974280129	0.968705417	0.979911	0.990355155	0.965797435	
+500	0.987827764	0.985003015	0.995892	0.996113645	0.984445141	
+1000	0.988582623	0.984665828	0.996565	0.99629349	0.984876165
+
+
+
+------------------------------------
+_obfuscator
+------------------------------------
+
+H2X Fidelity Score: 0.5758333333333333
+SHAP Fidelity Score: 0.5
+LIME Fidelity Score: 0.49166666666666664
+LEMNA Fidelity Score: 0.525
+i-MAD Fidelity Score: 0.5012180267965896
+---------------------------
+for malware
+
+H2X Fidelity Score: 0.37166666666666665 	Fidelity Score: 0.6283333333333333
+SHAP Fidelity Score: 0.9916666666666667		Fidelity Score: 0.008333333333333333
+LEMNA Fidelity Score: 0.37833333333333335	Fidelity Score: 0.6216666666666667
+I-MAD Fidelity Score: 0.00243605359317905	Fidelity Score: 0.997563946406821
+
+
+Sparsity
+
+N	H2X		SHAP		LIME		LEMNA		I-MAD
+10	0.465400761	0.487423464			0.025		0.387644907
+100	0.485957789	0.499720426			0.025		0.387814153
+500	0.49086121	0.506065685			0.025		0.388086217
+
+Consistency
+
+N	H2X		SHAP		LIME		LEMNA		I-MAD
+100	0.021224	0.020105			0.010184	0.058082
+500	0.005742	0.004145			0.004000	0.062413
+1000	0.005050	0.003453			0.005491	0.060449
+
+Robustness
+
+N	H2X		SHAP		LIME		LEMNA		I-MAD
+100	0.978775	0.979894			0.989815	0.941917
+500	0.994257	0.995854			0.995999	0.937586
+1000	0.994949	0.996546			0.994508	0.939550
+-------------------------
+-------------------------
+-------------------------
+-------------------------
+-------------------------
+-------------------------
+Model detail
+--------------------------------------------------
+Model Name:  model_20240809_190709
+Total data length:  41618
+malware    26057
+benign     15561
+
+Throughput for 1 files: 6.63 files/sec (Time taken: 0.1507 sec)
+Throughput for 10 files: 129.63 files/sec (Time taken: 0.0771 sec)
+Throughput for 50 files: 1356.15 files/sec (Time taken: 0.0369 sec)
+Throughput for 100 files: 2897.63 files/sec (Time taken: 0.0345 sec)
+261/261 - 0s - loss: 7.3373e-04 - sparse_categorical_accuracy: 0.9998
+ [[3138    1]
+ [   7 5178]]
+Precision: 0.9990
+Recall: 0.9990
+F1 Score: 0.9990
+-------------------------------------
+I-MAD Train
+---
+C:\Users\Saqib\anaconda3\python.exe C:/Users/Saqib/PycharmProjects/H2X/SOTA/I-MAD/train.py
+Epoch [5/20], Loss: 0.2796
+Epoch [10/20], Loss: 0.0678
+Epoch [15/20], Loss: 0.0297
+Epoch [20/20], Loss: 0.0158
+Accuracy: 0.9965
+Precision: 0.9965
+Recall: 0.9965
+F1 Score: 0.9965
+Confusion Matrix:
+[[3164   10]
+ [  19 5131]]
+----------------------------------------
+C:\Users\Saqib\anaconda3\python.exe C:/Users/Saqib/PycharmProjects/H2X/SOTA/I-MAD/test.py
+Accuracy: 0.9965
+Precision: 0.9965
+Recall: 0.9965
+F1 Score: 0.9965
+Confusion Matrix:
+[[3160   14]
+ [  15 5135]]
+Throughput for 1 files: 28.14 files/second
+Throughput for 10 files: 28.67 files/second
+Throughput for 50 files: 28.53 files/second
+Throughput for 100 files: 28.37 files/second
+
+
+
+
